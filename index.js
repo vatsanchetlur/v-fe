@@ -73,7 +73,7 @@ Return the response as JSON in this format:
   console.log("Sending data to backend:", payload);
 
   try {
-    const response = await fetch("https://ezepics-backend.onrender.com/api/generate-upload", {
+    const response = await fetch("https://v-be.onrender.com/api/generate-upload", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
