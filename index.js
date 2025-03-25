@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById("downloadPdfBtn").disabled = true;
 
   try {
-    const res = await fetch('https://ezepics-backend.onrender.com/api/prompts');
+    const res = await fetch('https://v-be.onrender.com/api/prompts');
     const promptData = await res.json();
     const edgeSelect = document.getElementById('edge');
     promptData.prompts.forEach(prompt => {
